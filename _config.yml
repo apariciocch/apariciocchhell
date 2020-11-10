@@ -85,8 +85,8 @@ author:
   bio              : "Más allá de la muerte, de la oscuridad, una tierra más allá,  oscuro es el cielo.. oscuro como mi odio,  encontrare cura para mi oscuro subconscienter"
   location         : "Location"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
