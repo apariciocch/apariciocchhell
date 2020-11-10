@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Aparicio Capcha / Hellhammer"
+title                    : "Aparicio Capcha Chavez"
 title_separator          : "-"
 name                     : &name "Aparicio Capcha"
-description              : &description "personal description"
+description              : &description "Más allá de la muerte, de la oscuridad, una tierra más allá,  oscuro es el cielo.. oscuro como mi odio,  encontrare cura para mi oscuro subconsciente"
 url                      : https://apariciocch.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "apariciocch/apariciocch.github.io"
