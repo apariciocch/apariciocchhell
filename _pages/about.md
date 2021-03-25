@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Esta es la pagina personal de Aparicio Capcha Chavez
+Esta es mi página personal,  para colocar mi CV  y publicar cosas que me parecen agradables desde mi punto de vista. 
 ======
 
-Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba 
+ “Perded toda esperanza, vosotros los que entráis aquí”
