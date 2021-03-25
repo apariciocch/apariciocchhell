@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Aparicio Capcha"
   avatar           : "profile.png"
-  bio              : "Más allá de la muerte, de la oscuridad, una tierra más allá,  oscuro es el cielo.. oscuro como mi odio,  encontrare cura para mi oscuro subconscienter"
+  bio              : "Más allá de la muerte, de la oscuridad, una tierra más allá,  oscuro es el cielo.. oscuro como mi odio,  encontrare cura para mi oscuro subconsciente"
   location         : "Location"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -94,7 +94,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "apariciocch"
+  facebook         : #"apariciocch"
   foursquare       :
   github           : "apariciocch"
   google_plus      :
