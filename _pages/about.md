@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Esta es mi página personal,  para colocar mi CV  y publicar cosas que me parecen agradables desde mi punto de vista. 
+Los problemas difíciles de resolver han de ser bienvenidos, ya que son una oportunidad de evolucionar y aprender algo que no sabías. 
 ======
 
  “Perded toda esperanza, vosotros los que entráis aquí”
