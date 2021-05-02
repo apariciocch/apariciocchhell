@@ -143,7 +143,7 @@
                                     }
                                 },
                                 "tech": ["Python", "Dask", "Hadoop", "MapReduce", "Spark", "GCP"],
-                                "github": "https://github.com/the-karanshah/Child-Mortality-Analysis.git",
+                                "github": "https://github.com/apariciocch/Child-Mortality-Analysis.git",
                                 "external": ""
                             },
                             "html": "<ul>\n<li>Analysis on secondary factors contributing to child mortality using Big Data Techniques, under supervision of <a href=\"https://www3.cs.stonybrook.edu/~has/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Prof. Andrew Schwartz</a>. </li>\n<li>Implemented Linear Regression and Similarity Search running on women lifestyle real data distributed on Hadoop clusters</li>\n</ul>"
@@ -192,7 +192,7 @@
                                 },
                                 "tech": ["Python", "Pandas", "Dask"],
                                 "github": "",
-                                "external": "https://github.com/the-karanshah/Retail-Sales-Data-Analysis/blob/master/Final%20Report.pdf"
+                                "external": "https://github.com/apariciocch/Retail-Sales-Data-Analysis/blob/master/Final%20Report.pdf"
                             },
                             "html": "<ul>\n<li>Analysis on a market basket dataset to provide insights to help the company with business by finding reasons for drop in sales, under Supervision of <a href=\"https://www3.cs.stonybrook.edu/~skiena/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Prof. Steven Skiena</a>. </li>\n<li>Implemented Word2Vec and LSTM model with k-means clustering to improve Shelf Space Management and Inventory management.</li>\n</ul>"
                         }
@@ -263,7 +263,7 @@
                                     }
                                 },
                                 "tech": ["Python", "Pandas", "Scipy"],
-                                "github": "https://github.com/the-karanshah/Covid-Impact-Analysis.git",
+                                "github": "https://github.com/apariciocch/Covid-Impact-Analysis.git",
                                 "external": ""
                             },
                             "html": "<ul>\n<li>Analysed Covid's impact using a Covid dataset and an associated (non-covid) dataset, instructed by <a href=\"https://www3.cs.stonybrook.edu/~anshul/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Prof. Anshul Gandhi</a>.</li>\n<li>Performed AR, EWMA, Wald's test, Z-test, t-test, K-S test, permutation test, correlation, and Bayesian inference along with suitable visualizations</li>\n</ul>"
