@@ -1,7 +1,3 @@
 {
-  "root": true,
-  "extends": "starry",
-  "rules": {
-    "no-var": 0,
-  }
+  "extends": "@upstatement/eslint-config/react"
 }
