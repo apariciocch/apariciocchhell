@@ -128,7 +128,7 @@
                     {
                         "node": {
                             "frontmatter": {
-                                "title": "Child Mortality Analysis",
+                                "title": "Analisis de Muertes",
                                 "cover": {
                                     "childImageSharp": {
                                         "fluid": {
