@@ -1,4 +1,3 @@
 User-agent: *
-Allow: /
-Sitemap: https://apariciocch.github.io/sitemap.xml
-Host: https://apariciocch.github.io
+Disallow:
+Sitemap: http://brittanychiang.com/sitemap.xml
