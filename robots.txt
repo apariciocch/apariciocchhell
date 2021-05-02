@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://the-karanshah.github.io/sitemap.xml
-Host: https://the-karanshah.github.io
+Sitemap: https://apariciocch.github.io/sitemap.xml
+Host: https://apariciocch.github.io
