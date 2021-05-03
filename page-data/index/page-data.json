@@ -7,8 +7,8 @@
                 "edges": [
                     {
                         "node": {
-                            "frontmatter": { "title": "Hola", "name": "Aparicio Capcha", "subtitle": "A Software Engineer!", "contactText": "Say Hello!" },
-                            "html": "<p>With Dec'20 Masters in Computer Science from <a href=\"http://udh.edu.pe/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Stony Brook University - NY</a>, looking for exciting Full Time Job Opportunities starting from February 2021 in United States for the roles - Software Engineer, Backend / Full Stack Developer, Machine Learning / Computer Vision Engineer.</p>"
+                            "frontmatter": { "title": "Hola", "name": "Aparicio Capcha", "subtitle": "Coordinador ADminsitrativo", "contactText": "Say Hello!" },
+                            "html": "<p>Egresado de Psicología,  en la  <a href=\"http://udh.edu.pe/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Universidad de Huánuco</a>, en busca de emocionantes oportunidades de trabajo a tiempo completo.</p>"
                         }
                     }
                 ]
