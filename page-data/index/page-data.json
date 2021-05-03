@@ -43,8 +43,13 @@
                 "edges": [
                     {
                         "node": {
-                            "frontmatter": { "title": "Masters in Computer Science", "company": "Stony Brook University", "location": "Stony Brook, NY", "range": "August 2019 - December 2020", "url": "http://udh.edu.pe/" },
-                            "html": "<ul>\n<li>GPA 3.64 / 4</li>\n<li>Coursework: Theory of Database Systems, Big Data Analytics, Machine Learning, Data-science, Probability and Statistics, Computer Vision</li>\n</ul>"
+                            "frontmatter": { 
+                                "title": "Egresado de Psicología", 
+                                "company": "Universidad de Huánuco", 
+                                "location": "Huánuco - Perú", 
+                                "range": "Enero 2014 - Diciembre 2019", 
+                                "url": "https://programas.cloududh.com/#/psicologia" },
+                            "html": "<ul>\n<li>Psicología Clínica / 4</li>\n<li>El psicólogo graduado realiza diagnósticos psicológicos desde una actitud ética y responsable. Utiliza las pruebas y herramientas psicológicas pertinentes para evaluar a un individuo, o grupo en el campo clínico.</li>\n</ul>"
                         }
                     },
                     {
