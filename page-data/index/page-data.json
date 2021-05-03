@@ -7,7 +7,7 @@
                 "edges": [
                     {
                         "node": {
-                            "frontmatter": { "title": "Hola", "name": "Aparicio Capcha", "subtitle": "Coordinador ADminsitrativo", "contactText": "Say Hello!" },
+                            "frontmatter": { "title": "Hola, soy", "name": "Aparicio Capcha", "subtitle": "Cordinador Administrativo", "contactText": "Say Hello!" },
                             "html": "<p>Egresado de Psicología,  en la  <a href=\"http://udh.edu.pe/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Universidad de Huánuco</a>, en busca de emocionantes oportunidades de trabajo a tiempo completo.</p>"
                         }
                     }
@@ -32,7 +32,7 @@
                                         }
                                     }
                                 },
-                                "skills": ["Python", "JavaScript (ES6+)", "Java", "React.js", "Node.js", "Docker", "GCP", "AWS"]
+                                "skills": ["Illustrator", "HTML", "MicrosWord", "React.js", "Node.js", "Docker", "GCP", "AWS"]
                             },
                             "html": "<p>I have 2+ years of experience in fields of Full Stack, Cloud Services, Machine Learning, and Computer Vision. My goal is to be engaged in Software Development building high-performance, robust and scalable applications, also by not being limited to a few technology stacks.</p>\n<p>After graduating from <a href=\"http://udh.edu.pe/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Stony Brook University</a>, I plan to join a strong visionary team working towards a wide variety of challenging and interesting projects with different technologies.</p>\n<p>And, I am a <a href=\"https://www.instagram.com/apariciocch\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">photographer</a> by hobby ;)</p>\n<p>Here are a few technologies I've been working with recently:</p>"
                         }
@@ -50,11 +50,11 @@
                     {
                         "node": {
                             "frontmatter": {
-                                "title": "Bachelors in Computer Engineering",
-                                "company": "Gujarat Technological University",
-                                "location": "Ahmedabad, India",
-                                "range": "August 2014 - May 2018",
-                                "url": "https://www.gtu.ac.in/page.aspx?p=AboutUs"
+                                "title": "Egresado de Psicología",
+                                "company": "Universidad de Huánuco",
+                                "location": "Huánuco - Perú",
+                                "range": "Enero 2014 - Diciembre 2019",
+                                "url": "https://programas.cloududh.com/#/psicologia"
                             },
                             "html": "<ul>\n<li>Coursework : Data Structures, Algorithms, Software Engineering, Object Oriented Programming, Distributed Operating System</li>\n</ul>"
                         }
@@ -66,7 +66,7 @@
                     {
                         "node": {
                             "frontmatter": {
-                                "title": "Software Developer Intern",
+                                "title": "Psicología",
                                 "company": "Quantiphi",
                                 "location": "Marlborough, MA",
                                 "fullform": "Qauntiphi",
