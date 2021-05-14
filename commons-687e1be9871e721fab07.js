@@ -4121,7 +4121,7 @@
                                                     a.a.createElement(
                                                         "div",
                                                         { style: { transitionDelay: (o ? 100 * l.navLinks.length : 0) + "ms" } },
-                                                        a.a.createElement(ht, { href: "/KaranShah_SWE_resume.pdf", target: "_blank", rel: "nofollow noopener noreferrer" }, "Resume")
+                                                        a.a.createElement(ht, { href: "/Aparicio_SWE_resume.pdf", target: "_blank", rel: "nofollow noopener noreferrer" }, "Resume")
                                                     )
                                                 )
                                         )
@@ -4259,7 +4259,7 @@
                                             return a.a.createElement(Pt, { key: t }, a.a.createElement(Mt, { to: n }, r));
                                         })
                                 ),
-                                a.a.createElement(Rt, { href: "KaranShah_SWE_resume.pdf", target: "_blank", rel: "nofollow noopener noreferrer" }, "Resume")
+                                a.a.createElement(Rt, { href: "Aparicio_SWE_resume.pdf", target: "_blank", rel: "nofollow noopener noreferrer" }, "Resume")
                             )
                         )
                     );
@@ -6254,7 +6254,7 @@
                         a.a.createElement(
                             go,
                             { id: "projects" },
-                            a.a.createElement(O.b, { ref: n }, "Some Things I've Built"),
+                            a.a.createElement(O.b, { ref: n }, "Algunas cosas que he construido"),
                             a.a.createElement(
                                 "div",
                                 null,
@@ -6279,7 +6279,8 @@
                                             a.a.createElement(
                                                 yo,
                                                 null,
-                                                a.a.createElement(vo, null, "Featured Project"),
+                                                a.a.createElement(vo, null, "
+Proyecto destacado"),
                                                 a.a.createElement(bo, null, l ? a.a.createElement("a", { href: l, target: "_blank", rel: "nofollow noopener noreferrer", "aria-label": "External Link" }, u) : u),
                                                 a.a.createElement(wo, { dangerouslySetInnerHTML: { __html: i } }),
                                                 c &&
