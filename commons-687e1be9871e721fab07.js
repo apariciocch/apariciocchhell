@@ -1030,13 +1030,13 @@
         "8SHQ": function (e, t) {
             e.exports = {
                 siteTitle: "Aparicio Capcha | Egresado | Psicólogo",
-                siteDescription: "Aparicio Capcha is a Graduate Student in Computer Science at Stony Brook University, looking for exciting Full Time Job Opportunities starting from January 2021 in United States.",
-                siteKeywords: "Aparicio Capcha, Karan, software, engineer, software engineer, python, javascript, stony brook, SBU, stony brook university",
+                siteDescription: "Aparicio Capcha Egresado de Psicología, en la Universidad de Huánuco, en busca de emocionantes oportunidades de trabajo a tiempo completo.",
+                siteKeywords: "Aparicio Capcha, Adobe Illustrator, HTML, Microsoft Word, Microsoft Excel, Microsoft Power Point, GitHub, Windows 10, Prestashop",
                 siteUrl: "https://apariciocch.github.io",
                 siteLanguage: "en_US",
-                googleAnalyticsID: "UA-168012024-1",
+                googleAnalyticsID: "",
                 name: "Aparicio Capcha",
-                location: "Stony Brook, NY",
+                location: "Alhelies Mz B, Santa Anita",
                 email: "1201231818@udh.edu.pe",
                 github: "https://github.com/apariciocch",
                 socialMedia: [
