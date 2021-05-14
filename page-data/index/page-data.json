@@ -18,7 +18,7 @@
                     {
                         "node": {
                             "frontmatter": {
-                                "title": "About Me",
+                                "title": "Acerca de mí",
                                 "avatar": {
                                     "childImageSharp": {
                                         "fluid": {
