@@ -7,7 +7,7 @@
                 "edges": [
                     {
                         "node": {
-                            "frontmatter": { "title": "Hola, soy", "name": "Aparicio Capcha", "subtitle": "Coordinador Administrativo", "contactText": "Say Hello!" },
+                            "frontmatter": { "title": "Hola, mi nombre es", "name": "Aparicio Capcha", "subtitle": "Coordinador Administrativo", "contactText": "Say Hello!" },
                             "html": "<p>Egresado de Psicología,  en la  <a href=\"http://udh.edu.pe/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Universidad de Huánuco</a>, en busca de emocionantes oportunidades de trabajo a tiempo completo.</p>"
                         }
                     }
