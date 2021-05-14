@@ -202,18 +202,6 @@
                     },
                     {
                         "node": {
-                            "frontmatter": { "title": "Web Search Engine", "tech": ["Java", "Python", "Ajax", "PHP", "Crawler4j"], "github": "", "external": "" },
-                            "html": "<ul>\n<li>A search engine implemented using Apache Solr PageRank, and Lucene algorithms. </li>\n<li>It crawls web and gathers data and indexes the webpages using Apache Tika parser with advanced features like spell checking, autocompletion and generation of snippets for improving result display</li>\n</ul>"
-                        }
-                    },
-                    {
-                        "node": {
-                            "frontmatter": { "title": "Nerve Segmentation", "tech": ["Python", "Keras", "Tensorflow", "VGG16"], "github": "", "external": "https://www.kaggle.com/c/ultrasound-nerve-segmentation" },
-                            "html": "<ul>\n<li>Implemented and trained a CNN architecture based on U-net for segmentation using pretrained weights of VGG16 to participate in a <a href=\"https://www.kaggle.com/c/ultrasound-nerve-segmentation\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Kaggle Competition</a></li>\n</ul>"
-                        }
-                    },
-                    {
-                        "node": {
                             "frontmatter": { "title": "Movie Recommendation", "tech": ["Python", "SVM", "Neural Network"], "github": "", "external": "" },
                             "html": "<ul>\n<li>A system to suggest movies based on a user's interests using MovieLens dataset</li>\n<li>Implemented SVM and Fully Connected Neural Network</li>\n</ul>"
                         }
