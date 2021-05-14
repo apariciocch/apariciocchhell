@@ -5931,7 +5931,7 @@
                     return a.a.createElement(
                         Ua,
                         { id: "jobs", ref: d },
-                        a.a.createElement(O.b, null, "Where I've Worked"),
+                        a.a.createElement(O.b, null, "Donde he trabajado"),
                         a.a.createElement(
                             Ha,
                             null,
