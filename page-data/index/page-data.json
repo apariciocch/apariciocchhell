@@ -84,7 +84,7 @@
                     {
                         "node": {
                             "frontmatter": {
-                                "title": "Customer Service Advisor",
+                                "title": "Graduate Student Researcher",
                                 "company": "Teleatento del Perú",
                                 "location": "Av. La Molina s/n, Lima",
                                 "fullform": "Teleatento del Perú",
@@ -95,7 +95,19 @@
                         }
                     },
                     
-                    
+                    {
+                        "node": {
+                            "frontmatter": {
+                                "title": "Research Intern",
+                                "company": "ISRO",
+                                "location": "Ahmedabad, India",
+                                "fullform": "ISRO - Indian Space Research Organization",
+                                "range": "July 2017 - May 2018",
+                                "url": "https://www.isro.gov.in/about-isro"
+                            },
+                            "html": "<p>Technologies: Python, Keras, Deep Learning, Numpy, OpenCV</p>\n<ul>\n<li>Designed generalized Convolutional Neural Network architecture to handle multimodal and/or multispectral imagery along with adaptability\nto varying application requirements; trained on Potsdam benchmark dataset producing State of the art results to Semantic Segmentation</li>\n<li>Built software tools in Python for data preparation/processing of geographic remote sensing data, visualization, real-time training performance\nevaluation, post-processing and output generation as a semi-automation approach</li>\n<li>Manipulated raster GIS data as a part of the pre-processing task using Python and QGIS application</li>\n</ul>"
+                        }
+                    }
                 ]
             },
             "featured": {
