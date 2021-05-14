@@ -84,14 +84,14 @@
                     {
                         "node": {
                             "frontmatter": {
-                                "title": "Graduate Student Researcher",
+                                "title": "Customer Service Advisorr",
                                 "company": "Teleatento del Perú",
                                 "location": "Av. La Molina s/n, Lima",
                                 "fullform": "Teleatento del Perú",
                                 "range": "Agosto 2010 - Agosto 2015",
                                 "url": "https://atento.com/"
                             },
-                            "html": "<p>Technologies: Java, Javascript, Python, Elastic Search</p>\n<ul>\n<li>Working on a project ”RadSearch” under the supervision of Prof. I.V. Ramakrishnan, a Search Engine used regularly by the doctors at the Radiology Department of the Stony Brook Hospital to find the most relevant information about patients</li>\n<li>Created a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents using Elastic Search to handle user queries and Java Servlets, Python, Javascript to handle the backend</li>\n</ul>"
+                            "html": "<p>Technologies: Telefonica del Perú </p>\n<ul>\n<li>Soporte Movistar Uno</li>\n<li>Atención de Reclamos</li>\n</ul>"
                         }
                     },
                     
