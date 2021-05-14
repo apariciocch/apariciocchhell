@@ -71,14 +71,14 @@
                     {
                         "node": {
                             "frontmatter": {
-                                "title": "Psicología",
+                                "title": "Coordinador Administrativo",
                                 "company": "AlbatrossCloud",
-                                "location": "Marlborough, MA",
-                                "fullform": "Qauntiphi",
-                                "range": "September 2020 - December 2020",
-                                "url": "https://apariciocch.github.io/"
+                                "location": "Lima- Perú",
+                                "fullform": "San Borja",
+                                "range": "Agosto 2015 - December 2020",
+                                "url": "https://albatross.pe/"
                             },
-                            "html": "<p>Technologies: React.js, Python, GRPC, WebRTC, Docker</p>\n<ul>\n<li>Building software tools in React.js and Python with Machine Learning Engineers to accelerate production‑grade Conversational AI use cases in Docker Container over GCP cluster</li>\n<li>Using Flask based routing methods to trigger underlying capabilities of NVIDIA’s end‑to‑end ML framework and Socket+GRPC for live audio transcription</li>\n</ul>"
+                            "html": "<p>Technologies: GitLab, Google Suite, Microsoft Office, Adobe Illustrator, HTML</p>\n<ul>\n<li>Apoyo Administrativos en el despliegue de todos los software desarrollados por la empresa.</li>\n<li>Capacitación a los usuarios finales</li>\n</ul>"
                         }
                     },
                     {
