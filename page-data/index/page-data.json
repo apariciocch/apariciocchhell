@@ -88,25 +88,13 @@
                                 "company": "SBM",
                                 "location": "Stony Brook, NY",
                                 "fullform": "Stony Brook Medicine",
-                                "range": "January 2020 - December 2020",
+                                "range": "January 2020 - Diciembre 2020",
                                 "url": "https://www.stonybrookmedicine.edu/"
                             },
                             "html": "<p>Technologies: Java, Javascript, Python, Elastic Search</p>\n<ul>\n<li>Working on a project ”RadSearch” under the supervision of Prof. I.V. Ramakrishnan, a Search Engine used regularly by the doctors at the Radiology Department of the Stony Brook Hospital to find the most relevant information about patients</li>\n<li>Created a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents using Elastic Search to handle user queries and Java Servlets, Python, Javascript to handle the backend</li>\n</ul>"
                         }
                     },
-                    {
-                        "node": {
-                            "frontmatter": {
-                                "title": "Graduate Teaching Assistant",
-                                "company": "SBU",
-                                "location": "Stony Brook, NY",
-                                "fullform": "Stony Brook University",
-                                "range": "January 2020 - May 2020",
-                                "url": "http://udh.edu.pe/"
-                            },
-                            "html": "<ul>\n<li>Assisted Prof. Dimitris Samaras in teaching Course CSE327-01: Computer Vision</li>\n<li>Managed assignment formulations and assessments, and resolve queries of students enrolled in the course</li>\n</ul>"
-                        }
-                    },
+                    
                     {
                         "node": {
                             "frontmatter": { "title": "Software Engineer", "company": "Simform", "location": "Ahmedabad, India", "fullform": null, "range": "June 2018 - April 2019", "url": "https://www.simform.com/about-us/" },
