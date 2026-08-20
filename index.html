@@ -1,80 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armando Capcha Chávez - CV</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-        <h1>Aparicio Armando Capcha Chávez</h1>
-        <p>Licenciado en Psicología</p>
-        <p class="contacto">Santa Anita - Lima / <a href="https://www.linkedin.com/in/apariciocch/" target="_blank">LinkedIn</a> / <a href="mailto:apariciocch@gmail.com">apariciocch@gmail.com</a></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Psicólogo especialista en aprendizaje, evaluación psicológica y apoyo educativo. Perfil profesional, experiencia, investigación y contacto."
+    />
+    <title>Aparicio Armando Capcha Chávez | Psicología, aprendizaje e investigación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark">AC</span>
+          <span class="brand-text">Aparicio C.</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-menu" aria-label="Menú principal">
+          <a href="#inicio" class="active">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#investigacion">Investigación</a>
+          <a href="#formacion">Formación</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a class="btn btn-primary nav-cta" href="mailto:apariciocch@gmail.com?subject=Solicitud%20de%20CV">Solicitar CV</a>
+      </div>
     </header>
 
-    <main class="contenido">
-        <section>
-            <h2>Acerca de mí</h2>
-            <p>Licenciado en Psicología con experiencia en intervención terapéutica, prevención del consumo de drogas y coordinación administrativa. Con formación en Terapia Cognitivo Conductual, manejo de clientes difíciles y tutoría educativa. He desarrollado habilidades en gestión de programas comunitarios y apoyo emocional, orientado a promover la adherencia al tratamiento y el bienestar.</p>
-        </section>
+    <main>
+      <section id="inicio" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Psicólogo • Aprendizaje • Investigación</p>
+            <h1>
+              Psicología para el<br />
+              <span>aprendizaje, la atención y el desarrollo.</span>
+            </h1>
+            <p class="lead">
+              Licenciado en Psicología con experiencia en intervención terapéutica, tutoría educativa,
+              orientación familiar y apoyo en procesos de aprendizaje y bienestar emocional.
+            </p>
 
-        <section>
-            <h2>Educación</h2>
-            <ul>
-                <li><strong>Universidad De Huánuco</strong>, Huánuco - Licenciado en Psicología</li>
-            </ul>
-        </section>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#sobre-mi">Conocer mi trayectoria</a>
+              <a class="btn btn-secondary" href="#contacto">Contactar</a>
+            </div>
 
-        <section>
-            <h2>Capacitaciones y Cursos de Especialización</h2>
-            <ul>
-                <li>Ministerio de la Mujer y Poblaciones Vulnerables - Curso "Intervención Especializada Para La Protección De Niñas, Niños Y Adolescentes" (48h)</li>
-                <li>Instituto Nacional de Salud - Curso "Evaluación De Riesgos Psicosociales Laborales Metodología Censopas - Copsoq" (16h)</li>
-                <li>Escuela Americana de Innovación - Comunicación Efectiva y Asertiva (120h)</li>
-                <li>Escuela Americana de Innovación - Terapia Cognitivo Conductual (240h)</li>
-                <li>Escuela Americana de Innovación - Psicología Clínica (240h)</li>
-                <li>DEVIDA - Habilidades Socioemocionales Para Fomentar La Adherencia Al Tratamiento Del Abuso De Drogas (40h)</li>
-                <li>DEVIDA - Motivación Al Cambio Para Desarrollar La Adherencia Al Tratamiento Por Consumo De Drogas (60h)</li>
-                <li>DEVIDA - Fundamentos Teóricos De Las Comorbilidades En Las Adicciones (80h)</li>
-                <li>DEVIDA - Entrenamiento En Tratamiento En Drogodependencia Treatnet Volumen B (32h)</li>
-                <li>DEVIDA - Técnicas Y Herramientas Para El Facilitador Comunitario En Prevención Del Consumo De Drogas (32h)</li>
-                <li>DEVIDA - Documento Técnico De Orientación, Consejería E Intervención Breve Para Consumidores De Sustancias Psicoactivas (32h)</li>
-                <li>DEVIDA - Modelos De Participación Comunitaria Para La Prevención Del Consumo De Drogas (40h)</li>
-                <li>Ministerio De Desarrollo E Inclusión Social - Gestión Para El Desarrollo E Inclusión Social (40h)</li>
-                <li>Ministerio De Desarrollo E Inclusión Social - Inducción A La Protección De Las Personas Adultas Mayores Y Las Personas Con Discapacidad (40h)</li>
-                <li>Oracle Next Education - Formación Front End G3 (109h)</li>
-                <li>Fundación Romero - Microsoft Excel Intermedio (16h)</li>
-                <li>Fundación Romero - Microsoft Word Intermedio (16h)</li>
-                <li>Fundación Romero - Microsoft Power Point Intermedio (16h)</li>
-                <li>King's College London - Inglés Básico</li>
-                <li>Udemy - Canva Diseño</li>
-                <li>AlbatrossCloud - HTML, CSS; Git y GitHub Fundamentals; Trello Support Help Desk; Sistemas Operativos Windows y Ubuntu; Microsoft Office; Google Suite Empresas</li>
-                <li>Teleatento del Perú S.A.C - Escuela de CROSS SELLING</li>
-                <li>Coursera - Diversos cursos de Psicología y Salud Mental</li>
+            <ul class="quick-facts" aria-label="Datos profesionales">
+              <li><span class="fact-label">Ubicación</span><strong>Santa Anita - Lima</strong></li>
+              <li><span class="fact-label">Email</span><strong>apariciocch@gmail.com</strong></li>
+              <li><span class="fact-label">LinkedIn</span><strong>apariciocch</strong></li>
             </ul>
-        </section>
+          </div>
 
-        <section>
-            <h2>Experiencia Laboral</h2>
-            <ul>
-                <li><strong>Programa Integral Nacional para el Bienestar Familiar - INABIF, CAR Especializado San Ricardo</strong> - Tutor Académico y Personal de Atención Permanente (Diciembre 2024 - Mayo 2025)</li>
-                <li><strong>Universidad Cesar Vallejo</strong> - Asesor Educativo de la Escuela de Posgrado (Enero 2024 - Junio 2024)</li>
-                <li><strong>Colegio Saco Oliveros Helicoidal</strong> - Tutor Académico (Marzo 2023 - Diciembre 2023)</li>
-                <li><strong>Albatross Cloud S.A.C</strong> - Documentación de Manuales de Software de Gestión Documental (Julio 2022 - Diciembre 2022)</li>
-                <li><strong>Ministerio de Salud Central 113 Salud / Atento del Perú</strong> - Orientador Línea 113 Salud (Mayo 2021 - Enero 2022)</li>
-                <li><strong>Albatross Cloud S.A.C</strong> - Coordinador Administrativo de la Oficina (Agosto 2015 - Octubre 2020)</li>
-                <li><strong>Teleatento del Perú S.A.C</strong> - Asesor de Servicio al Cliente (Agosto 2010 - Julio 2015)</li>
+          <div class="hero-visual reveal">
+            <div class="portrait-card">
+              <div class="portrait-frame">
+                <div class="portrait-badge">AC</div>
+              </div>
+
+              <div class="mini-panel">
+                <p class="mini-label">Especialización</p>
+                <h3>Problemas de aprendizaje</h3>
+                <ul>
+                  <li>Evaluación psicológica</li>
+                  <li>Apoyo pedagógico</li>
+                  <li>Orientación familiar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="intro-tag">Sobre mí</p>
+            <h2>Un enfoque cercano, profesional y centrado en la comprensión real del estudiante y su entorno.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>
+                Soy psicólogo con formación en intervención terapéutica, prevención del consumo de drogas,
+                tutoría educativa y apoyo emocional en contextos comunitarios y educativos. Mi trabajo se
+                orienta a fortalecer la atención integral de personas en procesos de aprendizaje, bienestar y
+                adaptación social.
+              </p>
+              <p>
+                A lo largo de mi experiencia he desarrollado funciones de atención permanente, orientación,
+                coordinación y acompañamiento a estudiantes, familias y usuarios con necesidades específicas,
+                siempre con un enfoque humano, respetuoso y basado en evidencia.
+              </p>
+            </div>
+
+            <div class="stats-grid reveal">
+              <article class="stat-card">
+                <span class="meta-num">[AGREGAR DATO]</span>
+                <h3>Colegiatura</h3>
+              </article>
+              <article class="stat-card">
+                <span class="meta-num">2024</span>
+                <h3>Experiencia reciente</h3>
+              </article>
+              <article class="stat-card">
+                <span class="meta-num">6+</span>
+                <h3>Ámbitos de trabajo</h3>
+              </article>
+              <article class="stat-card">
+                <span class="meta-num">100%</span>
+                <h3>Enfoque humano</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="intro-tag">Experiencia profesional</p>
+            <h2>Trayectoria en intervención, orientación y acompañamiento.</h2>
+          </div>
+
+          <div id="experience-list" class="timeline"></div>
+        </div>
+      </section>
+
+      <section id="servicios" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="intro-tag">Servicios</p>
+            <h2>Áreas de intervención y apoyo profesional.</h2>
+          </div>
+          <div id="services-list" class="cards-grid"></div>
+        </div>
+      </section>
+
+      <section id="investigacion" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="intro-tag">Investigación</p>
+            <h2>Producción académica y proyectos vinculados a la psicología y el aprendizaje.</h2>
+          </div>
+          <div id="research-list" class="research-grid"></div>
+        </div>
+      </section>
+
+      <section id="formacion" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="intro-tag">Formación</p>
+            <h2>Preparación académica y especialización continua.</h2>
+          </div>
+          <div id="education-list" class="education-stack"></div>
+        </div>
+      </section>
+
+      <section id="competencias" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="intro-tag">Competencias</p>
+            <h2>Habilidades profesionales y académicas.</h2>
+          </div>
+          <div id="skills-list" class="skills-grid"></div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section contact-section">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="intro-tag">Contacto</p>
+            <h2>Estoy disponible para orientar, acompañar e intervenir.</h2>
+            <p>
+              Si buscas apoyo psicopedagógico, orientación familiar o asesoría en procesos de aprendizaje,
+              puedes comunicarte directamente por correo o redes sociales.
+            </p>
+            <ul class="contact-list">
+              <li><span class="contact-icon">✉</span><a href="mailto:apariciocch@gmail.com">apariciocch@gmail.com</a></li>
+              <li><span class="contact-icon">in</span><a href="https://www.linkedin.com/in/apariciocch/" target="_blank" rel="noreferrer">linkedin.com/in/apariciocch</a></li>
+              <li><span class="contact-icon">⌂</span><span>Santa Anita - Lima, Perú</span></li>
+              <li><span class="contact-icon">☎</span><span>[AGREGAR DATO]</span></li>
             </ul>
-        </section>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="field-group">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+            </div>
+            <div class="field-group">
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="field-group">
+              <label for="subject">Asunto</label>
+              <input id="subject" name="subject" type="text" placeholder="Asunto" required />
+            </div>
+            <div class="field-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2024 Armando Capcha Chávez</p>
-        <button id="modo-btn">Modo oscuro</button>
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Aparicio Armando Capcha Chávez</p>
+        <div class="footer-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#contacto">Contacto</a>
+          <a href="mailto:apariciocch@gmail.com">Email</a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
