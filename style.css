@@ -1083,6 +1083,265 @@ main > .section:not(.hero) {
   margin-right: 0.5rem;
 }
 
+/* Reference layout: restrained surfaces, generous spacing, and a left-led editorial rhythm. */
+:root {
+  --bg: #0a192f;
+  --bg-light: #112240;
+  --bg-panel: #112240;
+  --panel-soft: #112240;
+  --card: #112240;
+  --border: rgba(136, 146, 176, 0.2);
+  --text: #ccd6f6;
+  --text-soft: #8892b0;
+  --slate: #8892b0;
+  --green: #64ffda;
+  --green-soft: rgba(100, 255, 218, 0.08);
+  --shadow: none;
+  --radius: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container,
+.narrow-container {
+  width: min(1000px, calc(100% - 3rem));
+}
+
+.site-header {
+  background: rgba(10, 25, 47, 0.94);
+  border-bottom: 0;
+}
+
+.nav-wrap {
+  min-height: 88px;
+}
+
+.brand-logo {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.site-nav {
+  gap: 1.7rem;
+}
+
+.site-nav a {
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
+
+.resume-button {
+  border-radius: 3px;
+  padding: 0.8rem 1.1rem;
+  font-size: 0.72rem;
+}
+
+.hero {
+  min-height: calc(100vh - 88px);
+  padding: 7rem 0 9rem;
+  align-items: center;
+}
+
+.hero-copy {
+  max-width: 900px;
+}
+
+.hero-intro {
+  margin-bottom: 1.5rem;
+  font-size: 0.82rem;
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
+.hero-copy h1 {
+  max-width: 900px;
+  color: #ccd6f6;
+  font-size: clamp(3.4rem, 8vw, 6.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.065em;
+  font-weight: 700;
+}
+
+.hero-copy h1 span {
+  color: #8892b0;
+}
+
+.hero-copy h2 {
+  max-width: 700px;
+  margin-top: 1.6rem;
+  color: #ccd6f6;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 600;
+}
+
+.lead {
+  max-width: 610px;
+  margin-top: 1.4rem;
+  color: #8892b0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  margin-top: 2.5rem;
+}
+
+.btn-primary {
+  border: 1px solid var(--green);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--green);
+  box-shadow: none;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+
+.btn-primary:hover {
+  background: var(--green-soft);
+}
+
+.fixed-social {
+  left: 2.2rem;
+  gap: 0.8rem;
+}
+
+.fixed-social a {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.fixed-social a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.fixed-social span,
+.fixed-email span {
+  height: 90px;
+  background: #8892b0;
+}
+
+.fixed-email {
+  right: 2.2rem;
+}
+
+main > .section:not(.hero) {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.section-heading h3 {
+  max-width: 700px;
+  color: #ccd6f6;
+  font-size: clamp(1.8rem, 3.5vw, 2.65rem);
+  line-height: 1.15;
+}
+
+.about-grid,
+.contact-grid,
+.media-grid {
+  gap: 3rem;
+}
+
+.about-copy,
+.stat-box,
+.timeline-item,
+.card-item,
+.research-card,
+.education-item,
+.skill-card,
+.contact-copy,
+.contact-form,
+.media-card {
+  border-color: rgba(136, 146, 176, 0.16);
+  border-radius: 3px;
+  background: rgba(17, 34, 64, 0.5);
+  box-shadow: none;
+}
+
+.about-copy,
+.contact-copy,
+.contact-form {
+  padding: 1.7rem;
+}
+
+.stat-box,
+.card-item,
+.skill-card,
+.education-item {
+  padding: 1.25rem;
+}
+
+.cards-grid,
+.skills-grid,
+.stats-grid,
+.education-list,
+.timeline {
+  gap: 0.8rem;
+}
+
+.timeline {
+  padding-left: 1.4rem;
+}
+
+.timeline-item::before {
+  left: -1.3rem;
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 0 5px rgba(100, 255, 218, 0.08);
+}
+
+.service-icon,
+.icon {
+  border-radius: 3px;
+  background: var(--green-soft);
+}
+
+.media-card {
+  border-radius: 3px;
+}
+
+.contact-list .icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.site-footer {
+  background: var(--bg);
+  border-top-color: rgba(136, 146, 176, 0.16);
+}
+
+@media (max-width: 760px) {
+  .container,
+  .narrow-container {
+    width: min(100% - 2rem, 620px);
+  }
+
+  .nav-wrap {
+    min-height: 76px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 5.5rem 0 6rem;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.7rem, 13vw, 4.4rem);
+  }
+
+  main > .section:not(.hero) {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+}
+
 .section-heading h3 {
   max-width: 760px;
   color: var(--text);
