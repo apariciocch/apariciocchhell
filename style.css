@@ -116,17 +116,30 @@ button, input, textarea {
 }
 
 .brand-logo {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 2.3rem;
   height: 2.3rem;
-  border-radius: 10px;
-  background: var(--green);
-  color: var(--bg);
-  font-family: var(--mono);
-  font-size: 1.2rem;
-  font-weight: 700;
   box-shadow: 0 10px 20px rgba(100, 255, 218, 0.25);
+}
+
+.brand-hexagon {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  animation: brand-draw 3.2s ease-in-out infinite alternate;
+}
+
+.brand-letter {
+  animation: brand-letter 3.2s ease-in-out infinite alternate;
+}
+
+@keyframes brand-draw {
+  0%, 18% { stroke-dashoffset: 360; }
+  58%, 100% { stroke-dashoffset: 0; }
+}
+
+@keyframes brand-letter {
+  0%, 55% { opacity: 0; }
+  75%, 100% { opacity: 1; }
 }
 
 .brand-name {
