@@ -115,16 +115,43 @@ const renderExperience = () => {
   const container = document.getElementById('experience-list');
   if (!container) return;
 
-  container.innerHTML = experience.map(item => `
-    <article class="timeline-item reveal">
-      <div class="timeline-top">
-        <h4>${item.institution}</h4>
-        <span class="timeline-tags">${item.period}</span>
-      </div>
-      <p class="job-role">${item.role}</p>
-      <p>${item.description}</p>
-    </article>
-  `).join('');
+  container.innerHTML = `
+    <div class="experience-tabs" role="tablist" aria-label="Experiencia profesional">
+      ${experience.map((item, index) => `
+        <button class="experience-tab${index === 0 ? ' active' : ''}" role="tab" aria-selected="${index === 0}" aria-controls="job-panel-${index}" id="job-tab-${index}" data-job="${index}">
+          ${item.institution.split(' - ')[0]}
+        </button>
+      `).join('')}
+    </div>
+    <div class="experience-panels">
+      ${experience.map((item, index) => `
+        <article class="experience-panel${index === 0 ? ' active' : ''}" role="tabpanel" tabindex="0" id="job-panel-${index}" aria-labelledby="job-tab-${index}" data-panel="${index}">
+          <div class="timeline-top">
+            <h4>${item.role} <span class="at">@</span> <span class="company">${item.institution}</span></h4>
+            <span class="timeline-tags">${item.period}</span>
+          </div>
+          <p>${item.description}</p>
+        </article>
+      `).join('')}
+    </div>
+  `;
+};
+
+const initExperienceTabs = () => {
+  const tabs = document.querySelectorAll('.experience-tab');
+  const panels = document.querySelectorAll('.experience-panel');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const selected = tab.dataset.job;
+      tabs.forEach(item => {
+        const isActive = item === tab;
+        item.classList.toggle('active', isActive);
+        item.setAttribute('aria-selected', String(isActive));
+      });
+      panels.forEach(panel => panel.classList.toggle('active', panel.dataset.panel === selected));
+    });
+  });
 };
 
 const renderServices = () => {
@@ -331,6 +358,7 @@ initNav();
 initReveal();
 initActiveNav();
 initForm();
+initExperienceTabs();
 initIntroLoader();
 initPhotoTilt();
 
