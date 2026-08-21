@@ -252,6 +252,9 @@ const initIntroLoader = () => {
   const letter = document.querySelector('#hexagon #A');
   if (!loader || !hexagonPath || !letter) return;
 
+  const loaderStartedAt = performance.now();
+  const minimumVisibleTime = 3500;
+
   const hideLoader = () => {
     if (window.anime) {
       const introAnimation = window.anime.timeline({
@@ -263,19 +266,23 @@ const initIntroLoader = () => {
         .add({
           targets: hexagonPath,
           strokeDashoffset: [window.anime.setDashoffset, 0],
-          duration: 1600
+          duration: 2300
         })
         .add({
           targets: letter,
           opacity: [0, 1],
-          duration: 700,
-          offset: '-=350'
+          duration: 950,
+          offset: '-=250'
         })
         .finished.then(() => {
-          window.setTimeout(() => loader.classList.add('is-hidden'), 180);
+          const elapsed = performance.now() - loaderStartedAt;
+          const remainingTime = Math.max(0, minimumVisibleTime - elapsed);
+          window.setTimeout(() => loader.classList.add('is-hidden'), remainingTime);
         });
     } else {
-      loader.classList.add('is-hidden');
+      const elapsed = performance.now() - loaderStartedAt;
+      const remainingTime = Math.max(0, minimumVisibleTime - elapsed);
+      window.setTimeout(() => loader.classList.add('is-hidden'), remainingTime);
     }
   };
 
