@@ -64,27 +64,6 @@ const services = [
   }
 ];
 
-const research = [
-  {
-    type: 'Proyecto',
-    title: '[AGREGAR TÍTULO DE INVESTIGACIÓN O PROYECTO]',
-    summary: 'Datos pendientes de completar según la producción académica registrada en el CV.',
-    year: '[AGREGAR AÑO]'
-  },
-  {
-    type: 'Publicación',
-    title: '[AGREGAR PUBLICACIÓN]',
-    summary: 'Sin registros confirmados disponibles en el CV actual; completar con la información correspondiente.',
-    year: '[AGREGAR AÑO]'
-  },
-  {
-    type: 'Trabajo académico',
-    title: '[AGREGAR DATO]',
-    summary: 'Incluir investigación, ponencia o material académico validado para presentar en la web.',
-    year: '[AGREGAR AÑO]'
-  }
-];
-
 const education = [
   {
     title: 'Universidad de Huánuco',
@@ -157,22 +136,6 @@ const renderServices = () => {
       <div class="service-icon">${item.icon}</div>
       <h4>${item.title}</h4>
       <p>${item.description}</p>
-    </article>
-  `).join('');
-};
-
-const renderResearch = () => {
-  const container = document.getElementById('research-list');
-  if (!container) return;
-
-  container.innerHTML = research.map(item => `
-    <article class="research-card reveal">
-      <div class="research-meta">
-        <span>${item.type}</span>
-        <span>${item.year}</span>
-      </div>
-      <h4>${item.title}</h4>
-      <p>${item.summary}</p>
     </article>
   `).join('');
 };
@@ -290,7 +253,6 @@ const renderYear = () => {
 
 renderExperience();
 renderServices();
-renderResearch();
 renderEducation();
 renderSkills();
 renderYear();

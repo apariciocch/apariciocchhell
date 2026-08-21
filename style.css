@@ -87,15 +87,10 @@ button, input, textarea {
   letter-spacing: -0.03em;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
+.brand-logo {
   width: 2.3rem;
   height: 2.3rem;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--green), #9ad7ff);
-  color: var(--bg);
-  font-size: 0.8rem;
   box-shadow: 0 10px 20px rgba(100, 255, 218, 0.25);
 }
 
@@ -335,21 +330,6 @@ button, input, textarea {
   height: 100%;
   object-fit: cover;
   opacity: 0.88;
-}
-
-.portrait-slot figcaption {
-  position: absolute;
-  left: 1rem;
-  right: 1rem;
-  bottom: 1rem;
-  padding: 0.65rem 0.8rem;
-  border: 1px dashed rgba(100, 255, 218, 0.45);
-  border-radius: 10px;
-  background: rgba(2, 12, 27, 0.8);
-  color: var(--green);
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  text-align: center;
 }
 
 .card-badge {
@@ -607,6 +587,60 @@ button, input, textarea {
   letter-spacing: 0.08em;
 }
 
+.media-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.media-card {
+  position: relative;
+  min-height: 330px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.media-card-wide {
+  min-height: 440px;
+}
+
+.media-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.media-card:hover img {
+  transform: scale(1.03);
+}
+
+.media-card::after {
+  content: "";
+  position: absolute;
+  inset: 35% 0 0;
+  background: linear-gradient(transparent, rgba(2, 12, 27, 0.85));
+  pointer-events: none;
+}
+
+.media-card figcaption {
+  position: absolute;
+  z-index: 1;
+  left: 1.25rem;
+  right: 1.25rem;
+  bottom: 1rem;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .education-list {
   display: grid;
   gap: 1rem;
@@ -797,7 +831,8 @@ textarea {
   .contact-grid,
   .cards-grid,
   .research-grid,
-  .skills-grid {
+  .skills-grid,
+  .media-grid {
     grid-template-columns: 1fr;
   }
 
