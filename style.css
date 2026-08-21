@@ -1120,6 +1120,21 @@ main > .section:not(.hero) {
   color: var(--green);
 }
 
+.hero-grid {
+  display: block;
+}
+
+.hero-copy {
+  max-width: 920px;
+  margin-left: 7%;
+}
+
+.hero-intro {
+  font-size: 1.05rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
 .hero-copy h2 {
   max-width: 680px;
   color: var(--text);
@@ -1205,6 +1220,30 @@ main > .section:not(.hero) {
   border: 0;
   border-radius: 0;
   box-shadow: none;
+}
+
+.about-portrait {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+  width: min(100%, 260px);
+  margin: 0;
+  border: 1px solid var(--green);
+  box-shadow: 14px 14px 0 rgba(100, 255, 218, 0.08);
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: saturate(0.8);
+  transition: filter 0.35s ease, transform 0.35s ease;
+}
+
+.about-portrait:hover img {
+  filter: saturate(1);
+  transform: translate(-5px, -5px);
 }
 
 .about-copy p,
@@ -1455,6 +1494,17 @@ textarea:focus {
   .about-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-copy {
+    max-width: none;
+    margin-left: 0;
+  }
+
+  .about-portrait {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 2rem;
   }
 
   .quick-facts {
