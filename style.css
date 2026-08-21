@@ -116,9 +116,16 @@ button, input, textarea {
 }
 
 .brand-logo {
+  display: grid;
+  place-items: center;
   width: 2.3rem;
   height: 2.3rem;
   border-radius: 10px;
+  background: var(--green);
+  color: var(--bg);
+  font-family: var(--mono);
+  font-size: 1.2rem;
+  font-weight: 700;
   box-shadow: 0 10px 20px rgba(100, 255, 218, 0.25);
 }
 

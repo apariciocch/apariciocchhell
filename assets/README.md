@@ -16,6 +16,6 @@ Sube aquí los recursos visuales usando exactamente estos nombres:
 
 - `foto-consulta.jpg`: imagen de un espacio profesional o de trabajo.
 - `foto-aprendizaje.jpg`: recurso visual relacionado con aprendizaje o acompañamiento educativo.
-- `logo.svg`: logotipo personal si decides reemplazar las iniciales AC.
+- El logotipo visible del sitio usa la letra `A` como identidad principal.
 
 No uses fotografías de pacientes, menores o terceros sin autorización. La página no incluye imágenes genéricas automáticamente: solo mostrará los archivos que subas a esta carpeta.
