@@ -248,10 +248,35 @@ const initForm = () => {
 
 const initIntroLoader = () => {
   const loader = document.querySelector('.intro-loader');
-  if (!loader) return;
+  const hexagonPath = document.querySelector('#hexagon path');
+  const letter = document.querySelector('#hexagon #A');
+  if (!loader || !hexagonPath || !letter) return;
 
   const hideLoader = () => {
-    window.setTimeout(() => loader.classList.add('is-hidden'), 700);
+    if (window.anime) {
+      const introAnimation = window.anime.timeline({
+        loop: false,
+        easing: 'easeInOutQuart'
+      });
+
+      introAnimation
+        .add({
+          targets: hexagonPath,
+          strokeDashoffset: [window.anime.setDashoffset, 0],
+          duration: 1600
+        })
+        .add({
+          targets: letter,
+          opacity: [0, 1],
+          duration: 700,
+          offset: '-=350'
+        })
+        .finished.then(() => {
+          window.setTimeout(() => loader.classList.add('is-hidden'), 180);
+        });
+    } else {
+      loader.classList.add('is-hidden');
+    }
   };
 
   if (document.readyState === 'complete') {

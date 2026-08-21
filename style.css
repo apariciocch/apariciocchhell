@@ -68,7 +68,7 @@ button, input, textarea {
   display: grid;
   place-items: center;
   background: var(--bg);
-  transition: opacity 0.55s ease, visibility 0.55s ease;
+  transition: opacity 0.65s ease, visibility 0.65s ease;
 }
 
 .intro-loader.is-hidden {
@@ -77,37 +77,16 @@ button, input, textarea {
   pointer-events: none;
 }
 
-.intro-loader img {
-  width: 82px;
-  height: 82px;
-  animation: loader-mark 0.9s ease both;
+.loader-container {
+  width: min(100px, 25vw);
+  max-width: 100px;
 }
 
-.loader-line {
-  position: absolute;
-  bottom: 14vh;
-  width: 120px;
-  height: 1px;
-  overflow: hidden;
-  background: rgba(100, 255, 218, 0.2);
-}
-
-.loader-line i {
+.loader-container svg {
   display: block;
-  width: 45%;
+  width: 100%;
   height: 100%;
-  background: var(--green);
-  animation: loader-line 1s ease-in-out infinite;
-}
-
-@keyframes loader-mark {
-  from { opacity: 0; transform: scale(0.86) rotate(-8deg); }
-  to { opacity: 1; transform: scale(1) rotate(0); }
-}
-
-@keyframes loader-line {
-  from { transform: translateX(-120%); }
-  to { transform: translateX(280%); }
+  margin: 0 auto;
 }
 
 .site-header {
