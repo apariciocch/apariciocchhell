@@ -1228,8 +1228,13 @@ main > .section:not(.hero) {
   grid-row: 1;
   width: min(100%, 260px);
   margin: 0;
+  overflow: hidden;
+  cursor: crosshair;
   border: 1px solid var(--green);
   box-shadow: 14px 14px 0 rgba(100, 255, 218, 0.08);
+  transform: perspective(900px) rotateX(var(--photo-x, 0deg)) rotateY(var(--photo-y, 0deg));
+  transition: transform 0.2s ease-out, box-shadow 0.35s ease;
+  will-change: transform;
 }
 
 .about-portrait img {
@@ -1241,9 +1246,27 @@ main > .section:not(.hero) {
   transition: filter 0.35s ease, transform 0.35s ease;
 }
 
+.about-portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(100, 255, 218, 0.3), transparent 30%);
+  transition: opacity 0.3s ease;
+}
+
 .about-portrait:hover img {
   filter: saturate(1);
-  transform: translate(-5px, -5px);
+  transform: scale(1.06);
+}
+
+.about-portrait:hover {
+  box-shadow: 20px 20px 0 rgba(100, 255, 218, 0.14), 0 20px 45px rgba(100, 255, 218, 0.14);
+}
+
+.about-portrait:hover::after {
+  opacity: 1;
 }
 
 .about-copy p,
@@ -1480,6 +1503,25 @@ textarea:focus {
 
 .site-footer {
   background: transparent;
+}
+
+.site-nav a,
+.footer-links a,
+.contact-list a,
+.fixed-social a,
+.fixed-email a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.site-nav a:focus-visible,
+.footer-links a:focus-visible,
+.contact-list a:focus-visible,
+.fixed-social a:focus-visible,
+.fixed-email a:focus-visible,
+.btn:focus-visible,
+.experience-tab:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 5px;
 }
 
 @media (max-width: 760px) {

@@ -224,7 +224,10 @@ const initReveal = () => {
     });
   }, { threshold: 0.12 });
 
-  document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+  document.querySelectorAll('.reveal').forEach((element, index) => {
+    element.style.transitionDelay = `${Math.min(index * 70, 350)}ms`;
+    observer.observe(element);
+  });
 };
 
 const initActiveNav = () => {
@@ -321,7 +324,7 @@ const initIntroLoader = () => {
 };
 
 const initPhotoTilt = () => {
-  const photo = document.querySelector('.portrait-slot');
+  const photo = document.querySelector('.about-portrait');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!photo || reduceMotion) return;
 
