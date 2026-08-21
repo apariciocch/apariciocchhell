@@ -190,10 +190,40 @@ button, input, textarea {
 }
 
 .hero-grid {
+  position: relative;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
   align-items: center;
+}
+
+.social-rail {
+  position: absolute;
+  left: -4rem;
+  bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.social-rail a {
+  color: var(--text-soft);
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-rail a:hover {
+  color: var(--green);
+  transform: translateY(-2px);
+}
+
+.social-rail span {
+  width: 1px;
+  height: 92px;
+  background: var(--text-soft);
+  opacity: 0.45;
 }
 
 .eyebrow {
@@ -289,8 +319,42 @@ button, input, textarea {
   box-shadow: var(--shadow);
 }
 
+.portrait-slot {
+  position: relative;
+  z-index: 1;
+  height: 470px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(100, 255, 218, 0.18);
+  border-radius: 24px;
+  background: linear-gradient(145deg, #10283b, #071221);
+}
+
+.portrait-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.88;
+}
+
+.portrait-slot figcaption {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px dashed rgba(100, 255, 218, 0.45);
+  border-radius: 10px;
+  background: rgba(2, 12, 27, 0.8);
+  color: var(--green);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-align: center;
+}
+
 .card-badge {
   position: absolute;
+  z-index: 3;
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
   display: grid;
@@ -308,6 +372,7 @@ button, input, textarea {
 .visual-card::before {
   content: "";
   position: absolute;
+  z-index: 2;
   inset: 1rem 1rem 1rem 1rem;
   background:
     linear-gradient(135deg, rgba(100, 255, 218, 0.1), rgba(138, 182, 255, 0.08)),
@@ -318,7 +383,7 @@ button, input, textarea {
 
 .visual-panel {
   position: relative;
-  z-index: 1;
+  z-index: 4;
   margin-top: 270px;
   padding: 1rem 1.1rem;
   border-radius: 18px;
@@ -723,6 +788,10 @@ textarea {
 }
 
 @media (max-width: 980px) {
+  .social-rail {
+    display: none;
+  }
+
   .hero-grid,
   .about-grid,
   .contact-grid,
