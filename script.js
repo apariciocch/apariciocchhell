@@ -159,11 +159,11 @@ const renderServices = () => {
   if (!container) return;
 
   container.innerHTML = services.map(item => `
-    <article class="card-item reveal">
+    <li class="card-item reveal">
       <div class="service-icon">${item.icon}</div>
       <h4>${item.title}</h4>
       <p>${item.description}</p>
-    </article>
+    </li>
   `).join('');
 };
 
