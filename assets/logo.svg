@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Logotipo AC</title>
+  <desc id="logo-desc">Monograma geométrico con las iniciales AC en azul profundo, marfil y violeta.</desc>
+  <defs>
+    <linearGradient id="background" x1="74" y1="58" x2="438" y2="454" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#172A3F"/>
+      <stop offset="1" stop-color="#0D1828"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="154" y1="154" x2="376" y2="358" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A598FF"/>
+      <stop offset="1" stop-color="#7567E8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="40" y="40" width="432" height="432" rx="124" fill="url(#background)"/>
+  <rect x="43" y="43" width="426" height="426" rx="121" fill="none" stroke="#31445D" stroke-width="6"/>
+
+  <path d="M128 350 218 158 298 350" fill="none" stroke="#F5F0E8" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M165 288h103" fill="none" stroke="#F5F0E8" stroke-width="24" stroke-linecap="round"/>
+
+  <path d="M386 199c-23-30-56-47-92-47-63 0-113 47-113 104s50 104 113 104c36 0 69-17 92-47" fill="none" stroke="url(#accent)" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="388" cy="199" r="9" fill="#F3A58D"/>
+  <circle cx="388" cy="313" r="9" fill="#F3A58D"/>
+</svg>
