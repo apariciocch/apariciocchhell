@@ -61,6 +61,55 @@ button, input, textarea {
   min-height: 100vh;
 }
 
+.intro-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+  transition: opacity 0.55s ease, visibility 0.55s ease;
+}
+
+.intro-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.intro-loader img {
+  width: 82px;
+  height: 82px;
+  animation: loader-mark 0.9s ease both;
+}
+
+.loader-line {
+  position: absolute;
+  bottom: 14vh;
+  width: 120px;
+  height: 1px;
+  overflow: hidden;
+  background: rgba(100, 255, 218, 0.2);
+}
+
+.loader-line i {
+  display: block;
+  width: 45%;
+  height: 100%;
+  background: var(--green);
+  animation: loader-line 1s ease-in-out infinite;
+}
+
+@keyframes loader-mark {
+  from { opacity: 0; transform: scale(0.86) rotate(-8deg); }
+  to { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+@keyframes loader-line {
+  from { transform: translateX(-120%); }
+  to { transform: translateX(280%); }
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -320,9 +369,13 @@ button, input, textarea {
   height: 470px;
   margin: 0;
   overflow: hidden;
+  cursor: crosshair;
   border: 1px solid rgba(100, 255, 218, 0.18);
   border-radius: 24px;
   background: linear-gradient(145deg, #10283b, #071221);
+  transform: perspective(900px) rotateX(var(--photo-x, 0deg)) rotateY(var(--photo-y, 0deg));
+  transition: transform 0.18s ease-out, box-shadow 0.3s ease;
+  will-change: transform;
 }
 
 .portrait-slot img {
@@ -330,6 +383,29 @@ button, input, textarea {
   height: 100%;
   object-fit: cover;
   opacity: 0.88;
+  transition: transform 0.5s ease;
+}
+
+.portrait-slot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(100, 255, 218, 0.25), transparent 28%);
+  transition: opacity 0.3s ease;
+}
+
+.portrait-slot:hover {
+  box-shadow: 0 24px 55px rgba(100, 255, 218, 0.18);
+}
+
+.portrait-slot:hover img {
+  transform: scale(1.06);
+}
+
+.portrait-slot:hover::after {
+  opacity: 1;
 }
 
 .card-badge {

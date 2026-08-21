@@ -246,6 +246,45 @@ const initForm = () => {
   });
 };
 
+const initIntroLoader = () => {
+  const loader = document.querySelector('.intro-loader');
+  if (!loader) return;
+
+  const hideLoader = () => {
+    window.setTimeout(() => loader.classList.add('is-hidden'), 700);
+  };
+
+  if (document.readyState === 'complete') {
+    hideLoader();
+  } else {
+    window.addEventListener('load', hideLoader, { once: true });
+  }
+};
+
+const initPhotoTilt = () => {
+  const photo = document.querySelector('.portrait-slot');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!photo || reduceMotion) return;
+
+  photo.addEventListener('pointermove', (event) => {
+    const bounds = photo.getBoundingClientRect();
+    const x = (event.clientX - bounds.left) / bounds.width;
+    const y = (event.clientY - bounds.top) / bounds.height;
+    const rotateY = (x - 0.5) * 7;
+    const rotateX = (0.5 - y) * 7;
+
+    photo.style.setProperty('--photo-x', `${rotateX}deg`);
+    photo.style.setProperty('--photo-y', `${rotateY}deg`);
+    photo.style.setProperty('--mouse-x', `${x * 100}%`);
+    photo.style.setProperty('--mouse-y', `${y * 100}%`);
+  });
+
+  photo.addEventListener('pointerleave', () => {
+    photo.style.setProperty('--photo-x', '0deg');
+    photo.style.setProperty('--photo-y', '0deg');
+  });
+};
+
 const renderYear = () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -260,4 +299,6 @@ initNav();
 initReveal();
 initActiveNav();
 initForm();
+initIntroLoader();
+initPhotoTilt();
 
