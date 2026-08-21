@@ -886,6 +886,19 @@ textarea {
   gap: 1rem;
 }
 
+.source-credit {
+  margin: 0;
+  padding: 0 1rem 1.25rem;
+  color: var(--slate);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-align: center;
+}
+
+.source-credit a {
+  color: var(--green);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(18px);
